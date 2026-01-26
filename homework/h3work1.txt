@@ -1,0 +1,4 @@
+Q. Why there is no concept of pointer in java explain.
+Ans. In java there is no concept of pointers due to the following reasons:
+    1. Since pointers creates memory errors like we may access wrong memory locations, or even change system memory.
+    2. Pointers have direct memory access to all the memory locations to the programs and therefore can turely breach out the security concerns.
