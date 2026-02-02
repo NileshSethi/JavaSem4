@@ -20,6 +20,8 @@ public class d5 {
 
 
 
+
+
 // single level inheritence...
 /*
 class grandparent{
@@ -47,6 +49,8 @@ public class d5 {
     }
 }
 */
+
+
 
 
 
@@ -82,6 +86,8 @@ public class d5{
 
 
 
+
+
 // using the keyword " this "
 /*
 class student{
@@ -102,6 +108,8 @@ public class d5 {
     }
 }
 */
+
+
 
 
 
@@ -128,6 +136,8 @@ public class d5 {
 
 
 
+
+
 /* same another example
 class Student {
 
@@ -147,6 +157,7 @@ class Student {
     }
 }
 */
+
 
 
 
@@ -179,7 +190,9 @@ public class d5 {
 
 
 
+
 // calling parent class constructor using super keyword
+/* 
 class parent{
     parent(){
         System.out.println("parent class constructor");
@@ -195,5 +208,169 @@ public class d5 {
     public static void main(String[] args){
         new child();
         
+    }
+}
+*/
+
+
+
+
+
+// final variable example
+/* 
+class d5{
+    final int MAX = 100;
+    void display(){
+        System.out.println("Max value is: " + MAX);
+    }
+    public static void main(String[] args){
+        d5 f = new d5();
+        f.display();
+    }
+}
+*/
+
+
+
+
+
+//final method example
+/* 
+class parent{
+    final void display(){
+        System.out.println("This is a final method in parent class");
+    }
+}
+class child extends parent{
+        // void display()
+}
+public class d5 {
+    public static void main(String[] args){
+        child c = new child();
+        c.display();
+    }
+}
+*/
+
+
+
+
+
+//final class example
+/* 
+final class parent{
+    void display(){
+        System.out.println("This is a final class");
+    }
+}
+public class d5{
+    public static void main(String[] args) {
+        parent p = new parent();
+        p.display();
+    }
+}
+*/
+
+
+
+
+
+//abstract keyword example
+/*
+abstract class Shape {
+    abstract void draw(); // Abstract method
+
+    void message() {
+        System.out.println("This is a shape.");
+    }
+}
+
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing a circle");
+    }
+}
+
+public class d5 {
+    public static void main(String[] args) {
+        Shape s = new Circle();
+        s.draw();
+        s.message();
+    }
+}
+*/
+
+
+
+
+
+//abstract class
+/* 
+abstract class Shape {
+    abstract void draw(); // Abstract method
+
+    void message() {
+        System.out.println("This is a shape.");
+    }
+}
+
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing a Circle.");
+    }
+}
+
+public class d5 {
+    public static void main(String[] args) {
+        Shape s = new Circle();
+        s.draw();
+        s.message();
+    }
+}
+*/
+
+
+
+
+
+//abstract method
+/* 
+abstract class animal {
+    abstract void sound();
+    void eat() { 
+        System.out.println("This animal eats food.");
+    }
+}
+class dog extends animal {
+    void sound() {
+        System.out.println("Dog barks.");
+    }
+}
+public class d5 {
+    public static void main(String[] args) {
+        animal a = new dog();
+        a.sound(); 
+        a.eat();   
+    }
+}
+*/
+
+
+
+
+
+//interface example
+interface Animal {
+    void sound();
+}
+class dog implements Animal {
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+}
+public class d5 {
+    public static void main(String[] args) {
+        dog a = new dog();
+        a.sound();
     }
 }
