@@ -1,3 +1,4 @@
+package d3;
 /* 
 class Student{
     String name;
