@@ -1,4 +1,3 @@
-package dailywork.d7;
 /*
 // Example of method overriding in Java
 class animal {
