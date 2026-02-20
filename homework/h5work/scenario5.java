@@ -45,13 +45,13 @@ class Employee {
         }
     }
     public void displayEmployeeDetails() {
-        System.out.println("--------------------------------");
+        System.out.println("");
         System.out.println("Employee ID : " + employeeId);
         System.out.println("Name        : " + name);
         System.out.println("Role        : " + role);
         System.out.println("Base Salary : $" + baseSalary);
         System.out.println("Final Salary: $" + finalSalary);
-        System.out.println("--------------------------------");
+        System.out.println("");
     }
     public String getEmployeeId() {
         return employeeId;
