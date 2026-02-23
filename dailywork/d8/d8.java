@@ -64,6 +64,10 @@ class d8 {
 }
 */
 
+
+
+
+/*
 // Superclass without exception declaration
 class SuperClass {
     void method() {
@@ -82,6 +86,31 @@ class SubClass extends SuperClass {
             s.method();
         } catch (ArithmeticException e) {
             System.out.println("Caught Exception: " + e.getMessage());
+        }
+    }
+}
+*/
+
+
+class d8 {
+    static void fun()
+    {
+        try {
+            throw new NullPointerException("demo");
+        }
+        catch (NullPointerException e) {
+            System.out.println("Caught inside fun(). ");
+            throw e;   // rethrowing the exception
+        }
+    }
+
+    public static void main(String args[])
+    {
+        try {
+            fun();
+        }
+        catch (NullPointerException e) {
+            System.out.println("Caught in main.");
         }
     }
 }
